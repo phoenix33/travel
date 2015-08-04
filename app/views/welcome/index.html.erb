@@ -1,0 +1,30 @@
+<h1>Lets' Go</h1>
+<p>Around the World in 80 days!</p>
+
+<%= @homeland %>
+
+<ul>
+	<% @countries.each do |country| %>
+		<li><%= country %></li>
+		<% end %>
+</ul>
+
+
+
+
+
+
+
+<%= image_tag 'travel.jpg', alt: "trav", id: "trav", class: "size-down" %>
+<%= image_tag 'travel1.jpg', alt: "trav1", id: "trav", class: "size-down" %>
+<%= image_tag 'travel3.jpg', alt: "trav3", id: "trav", class: "size-down" %>
+<%= image_tag 'travel4.jpg', alt: "trav4", id: "trav", class: "size-down" %>
+
+
+<br />
+<br />
+<h3>Array of Images</h3>
+
+<%= @images.each do |pic| %>
+	<%= image_tag pic, class: "size-down" %>
+	<% end %>
